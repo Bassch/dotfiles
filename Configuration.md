@@ -87,10 +87,18 @@ window_padding_width 25
 
 ### Steam
 >Try different compatibility layers of proton while booting games
+sudo pacman -S steam
 
-### Firefox
-
-### Obsidian
+### 
+sudo pacman -S yay
+git clone https://aur.archlinux.org/anki.git
+vim PKGBUILD
+makepkg -si
+sudo pacman -S rsync,ninja,cargo
+makepkg -si
+sudo pacman -S yarn,mold,uv
+makepkg -si
+anki
 
 
 ---
@@ -150,7 +158,7 @@ From Linux: Use dd
 29. Optional: Pray that the installation succeeded
 30. Install hyprland packages `pacman -S hyprland hyprpaper xdg-desktop-portal-hyprland waybar wofi wayland wayland-protocols xorg-xwayland kitty dunst hyprpolkitagent qt5-wayland qt6-wayland rofi-wayland hyprpicker hyprlock dolphin grim polkit-kde-agent slurp uwsm iwd smartmontools xdg-desktop-portal-hyprland xdg-utils wpa-supplicant`
 31. edit /etc/pacman.conf to include `[multilib]` and run `pacman -Sy`
-32. Install personal packages `pacman -S steam proton-steam discord spotify-launcher qbittorrent firefox obs-studio obsidian neovim kdenlive audacity anki telegram-desktop keepass libreoffice gimp vlc krita 
+32. Install personal packages `pacman -S steam proton-steam discord spotify-launcher qbittorrent firefox obs-studio obsidian neovim kdenlive audacity anki telegram-desktop keepass libreoffice gimp vlc vlc-plugins-all krita 
 33. git clone yay `git clone https://aur/archlinux.org/yay.git`
 	1. 
 34. From the Arch User Repository you can install `anki` , `proton-steam`, `yay`
