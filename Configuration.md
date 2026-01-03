@@ -89,7 +89,7 @@ window_padding_width 25
 >Try different compatibility layers of proton while booting games
 sudo pacman -S steam
 
-### 
+### anki
 sudo pacman -S yay
 git clone https://aur.archlinux.org/anki.git
 vim PKGBUILD
@@ -98,7 +98,6 @@ sudo pacman -S rsync,ninja,cargo
 makepkg -si
 sudo pacman -S yarn,mold,uv
 makepkg -si
-anki
 
 
 ---
